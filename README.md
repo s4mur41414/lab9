@@ -40,7 +40,11 @@ for(int i : v | filter([](int i){return i % 2;}) | transform([](int i){return i 
      std::cout << i << " ";
 ```
 
+<<<<<<< HEAD
 Еще одним значимым отличием такого подхода от изначального является то, что вычисления могут быть ленивыми, а новые могут не владеть массивом данных для решения данной задача. Подобный подход, в частонсти, применяется в классах [std::string_view](https://en.cppreference.com/w/cpp/string/basic_string_view) и [std::span](https://en.cppreference.com/w/cpp/container/span)
+=======
+Еще одним значимым отличием такого подхода от изначального является то, что вычисления являются ленивыми, а создаваемые объекты не владеют массивом данных для решения данной задача. Подобный подход в частонсти применяется в классах [std::string_view](https://en.cppreference.com/w/cpp/string/basic_string_view) и [std::span](https://en.cppreference.com/w/cpp/container/span)
+>>>>>>> 2beecbd (version 1.0)
 
 ### Требуемые адаптеры
 
@@ -68,5 +72,8 @@ for(int i : v | filter([](int i){return i % 2;}) | transform([](int i){return i 
 
 ## Deadline
 
+1. 02.04.24. 0.8
+2. 09.04.24. 0.65
+3. 16.04.24. 0.5
 
 Максимальное количество баллов - 10
